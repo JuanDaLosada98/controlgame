@@ -10,44 +10,44 @@
 ## Logica
 
 - Logica(PApplet): Constructor de la clase
-- crearPersonajes():void: 
-- pintarPersonajesPrincipales():void
-- pintarPersonajesSecundarios():void
-- pintarEnemigos():void
-- primerNivel():void
-- segundoNivel():void
-- tercerNivel();void
-- pintarNiveles():void
-- crearVideos():void 
-- pintarVideos():void
-- eventosDelMouse():void
-- eventosDelTeclado():void
+- crearPersonajes():void: Metodo que llama a los personajes
+- pintarPersonajesPrincipales():void: Metodo que coloca a los personajes en el lienzo
+- pintarPersonajesSecundarios():void: Metodo que coloca a los personajes en el lienzo
+- pintarEnemigos():void: Metodo que coloca a los personajes en el lienzo
+- primerNivel():void: Metodo que llama a los niveles
+- segundoNivel():void: Metodo que llama a los niveles
+- tercerNivel():void: Metodo que llama a los niveles
+- pintarNiveles():void: Metodo que coloca a los niveles en el lienzo
+- crearVideos():void: Trae los videos 
+- pintarVideos():void: Muestra los videos
+- eventosDelMouse():void: Funciones del gameplay
+- eventosDelTeclado():void: Funciones del gameplay
 - otrosEventos():void
-- validarChoqueConBonus():void
-- validarAtaqueAEnemigos():void
-- validarAtaqueAJugador():void
-- validarRecogidaDeObjetos
-- pintar():void
+- validarChoqueConBonus():void: Choque con bonus, adquiere vida
+- validarAtaqueAEnemigos():void: Jugadores contra enemigos
+- validarAtaqueAJugador():void: Enemigos contra jugadores
+- validarRecogidaDeObjetos: El personaje recoge objetos
+- pintar():void: Un pintar general
 
 ## Personaje
-- Personajes(PApplet, int,int,PImage[]):
-- run():v oid
-- getPosX():void
-- getPosY():void
+- Personajes(PApplet, int,int,PImage[]): Carga las imagenes del personaje
+- run():void:  Este es hilo por el cual se cargan las imagenes
+- getPosX():void: Obtiene pos x del personaje
+- getPosY():void: Obtiene pos x del personaje
 - animar():void
-- pintar():void
-- movimiento():void
+- pintar():void: Mostrar el personaje
+- movimiento():void: Describe los movimientos del personaje
 
 ## PersonajePrincipal
-- PersonajePrincipal(PApplet, int,int,PImage[],int,int):
-- movimientosEspeciales():void
-- añadirObjeto(Objeto):void
-- bajarVida(int):void
-- subirVida(int):void
-- sumarMonedas():void
-- pintarObjetoDePersonaje():void
-- ataque():void
-- animacion(int):void
+- PersonajePrincipal(PApplet, int,int,PImage[],int,int): Carga las imagenes del personaje
+- movimientosEspeciales():void:
+- añadirObjeto(Objeto):void:
+- bajarVida(int):void:
+- subirVida(int):void:
+- sumarMonedas():void:
+- pintarObjetoDePersonaje():void:
+- ataque():void:
+- animacion(int):void:
 ## Liszard
 - liszard(PApplet, int,int,PImage[],int,int):
 - pintar():void
@@ -55,7 +55,7 @@
 - lilG(PApplet, int,int,PImage[],int,int):
 - pintar():void 
 ## PersonajeEnemigo
-- PersonajeEnemigo(PApplet, int,int,PImage[]):
+- PersonajeEnemigo(PApplet, int,int,PImage[]): Carga las imagenes del personaje
 - movimientosEspeciales():void
 - bajarVida():void
 - ataque():void
